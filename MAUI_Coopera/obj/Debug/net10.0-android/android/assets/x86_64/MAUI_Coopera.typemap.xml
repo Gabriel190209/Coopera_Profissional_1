@@ -1,0 +1,10 @@
+<api type="debug" assembly-name="MAUI_Coopera" mvid="aa14342875b546a9a4c078775aca02ac">
+  <java-to-managed>
+    <entry java-name="crc64a80f8855e2c5cd0e/MainActivity" managed-name="MAUI_Coopera.MainActivity, MAUI_Coopera" managed-type-token-id="33554449" />
+    <entry java-name="crc64a80f8855e2c5cd0e/MainApplication" managed-name="MAUI_Coopera.MainApplication, MAUI_Coopera" managed-type-token-id="33554450" />
+  </java-to-managed>
+  <managed-to-java>
+    <entry java-name="crc64a80f8855e2c5cd0e/MainActivity" managed-name="MAUI_Coopera.MainActivity, MAUI_Coopera" managed-type-token-id="33554449" />
+    <entry java-name="crc64a80f8855e2c5cd0e/MainApplication" managed-name="MAUI_Coopera.MainApplication, MAUI_Coopera" managed-type-token-id="33554450" />
+  </managed-to-java>
+</api>

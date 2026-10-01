@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_Coopera.VirarProfissionalPage"
+             Title=""
+             BackgroundColor="#23539A">
+
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="White"/>
+        </Style>
+        <Style TargetType="Entry">
+            <Setter Property="TextColor" Value="White"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="White"/>
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <StackLayout Padding="10">
+            <VerticalStackLayout HorizontalOptions="Center">
+                <VerticalStackLayout Padding="30,0" Spacing="5" HorizontalOptions="Center">
+                    <Label Text="Telefone" HorizontalTextAlignment="Start" FontSize="18" />
+                    <Border StrokeShape="10" BackgroundColor="#1aF4F4F4">
+                        <Entry WidthRequest="300" x:Name="txtTelefone" BackgroundColor="Transparent" FontSize="15" Margin="10" Placeholder="(XX) XXXXX-XXXX"/>
+                    </Border>
+                    <Label Text="Serviço" HorizontalTextAlignment="Start" FontSize="18" />
+                    <Border StrokeShape="10" BackgroundColor="#1aF4F4F4">
+                        <Picker WidthRequest="300" x:Name="pckServico" BackgroundColor="Transparent" FontSize="15" Margin="10" Title="Escolha um tipo de serviço"/>
+                    </Border>
+                    <Label Text="Descrição" HorizontalTextAlignment="Start" FontSize="18" Margin="0,10,0,0"/>
+                    <Border StrokeShape="10" BackgroundColor="#1aF4F4F4">
+                        <Entry WidthRequest="300" x:Name="txtDescricao" BackgroundColor="Transparent" FontSize="15" Margin="10" HeightRequest="100"/>
+                    </Border>
+                    <Label Text="Foto de Perfil" HorizontalTextAlignment="Start" FontSize="18" Margin="0,10,0,0"/>
+                    <Border StrokeThickness="0" StrokeShape="10" HorizontalOptions="Start" Margin="0,10,0,0">
+                        <Image
+                            WidthRequest="40"
+                            HeightRequest="40"
+                            Source="mais.png"
+                            x:Name="imgPerfil"/>
+                    </Border>
+                    <Label Text="Foto Portifólio" HorizontalTextAlignment="Start" FontSize="18" Margin="0,10,0,0"/>
+                    <Border StrokeThickness="0" StrokeShape="10" HorizontalOptions="Start" Margin="0,10,0,0">
+                        <Image
+                            WidthRequest="40"
+                            HeightRequest="40"
+                            Source="mais.png"
+                            x:Name="imgPortifolio"/>
+                    </Border>
+                    <Button
+                        Margin="0,10,0,0"
+                        Text="Confirmar"
+                        FontSize="Body"
+                        HorizontalOptions="Fill"
+                        WidthRequest="325"
+                        HeightRequest="50"
+                        BackgroundColor="#FFFFFF"
+                        x:Name="btnConfirmar"/>
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

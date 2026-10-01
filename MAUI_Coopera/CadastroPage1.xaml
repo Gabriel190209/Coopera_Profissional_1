@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_Coopera.CadastroPage1"
+             BackgroundColor="#23539A"
+             Title="">
+    
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="White"/>
+        </Style>
+        <Style TargetType="Entry">
+            <Setter Property="TextColor" Value="White"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="White"/>
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <StackLayout HorizontalOptions="Center" Padding="0,0,0,20">
+
+        <Image
+    Source="logo_inicial.png"
+    HeightRequest="60"
+    Aspect="AspectFit"
+    SemanticProperties.Description="Logo do Coopera de uma formiga dentro de um circulo"
+    Margin="0,30,0,40"/>
+
+        <Label
+    Text="Faça seu cadastro!"
+    FontSize="27"
+    FontAttributes="Bold"
+    HorizontalTextAlignment="Center"
+    Margin="0,0,0,90"/>
+        <VerticalStackLayout Padding="30,0" Spacing="15" HorizontalOptions="Center">
+            <Label Text="Senha" HorizontalTextAlignment="Start" FontSize="18" />
+            <Border StrokeShape="10" BackgroundColor="#1aF4F4F4">
+                <Entry x:Name="txtPass" WidthRequest="300" BackgroundColor="Transparent" FontSize="15" Margin="10" IsPassword="True"/>
+            </Border>
+            <Label Text="Confirmar Senha" HorizontalTextAlignment="Start" FontSize="18" />
+            <Border StrokeShape="10" BackgroundColor="#1aF4F4F4">
+                <Entry x:Name="txtRePass" WidthRequest="300" BackgroundColor="Transparent" FontSize="15" Margin="10" IsPassword="True"/>
+            </Border>
+        </VerticalStackLayout>
+
+        <Border StrokeShape="11" WidthRequest="325" Margin="0,30,0,0">
+            <Button
+        x:Name="btnProximo"
+                Clicked="btnProximo_Clicked"
+        Text="Próximo"
+        FontSize="Body"
+        SemanticProperties.Hint="Counts the number of times you click"
+        HorizontalOptions="Fill"
+        WidthRequest="325"
+        HeightRequest="60"/>
+        </Border>
+
+    </StackLayout>
+</ContentPage>

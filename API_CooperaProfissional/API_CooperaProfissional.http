@@ -1,0 +1,6 @@
+@API_CooperaProfissional_HostAddress = http://localhost:5218
+
+GET {{API_CooperaProfissional_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_Coopera.PerfilProfissionalPage"
+             Title=""
+             BackgroundColor="#23539A">
+
+    <ScrollView>
+        <StackLayout Spacing="5" Margin="5" Padding="10">
+            <HorizontalStackLayout>
+                <Border StrokeThickness="0" StrokeShape="100">
+                    <Image
+                        BackgroundColor="DarkGrey"
+                        WidthRequest="120"
+                        HeightRequest="120"
+                        x:Name="imgPerfil"/>
+                </Border>
+                <VerticalStackLayout>
+                    <Label
+                        Text="Usuário"
+                        LineBreakMode="WordWrap"
+                        FontAttributes="Bold"
+                        TextColor="White"
+                        FontSize="20"
+                        Margin="20,0,0,0"
+                        x:Name="lblNome"/>
+                    <Label
+                        Text="Profissão"
+                        LineBreakMode="WordWrap"
+                        TextColor="White"
+                        FontSize="15"
+                        Margin="20,5,0,0"
+                        x:Name="lblProfissao"/>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+            <VerticalStackLayout Margin="0,35,0,0">
+                <Border BackgroundColor="White" StrokeThickness="0" StrokeShape="20" HeightRequest="400" Padding="20">
+                    <ScrollView>
+                        <VerticalStackLayout>
+                            <Label
+                                Text="kwndiwndoqeokdnweofkowefkwndiwndoqeokdnweofkowefkwndiwndoqeokdnweofkowef"
+                                LineBreakMode="WordWrap"
+                                x:Name="lblDescricao"/>
+                            <CollectionView x:Name="listPortfolio" HeightRequest="250" Margin="0,20,0,0">
+                                <CollectionView.ItemsLayout>
+                                    <GridItemsLayout Orientation="Vertical" Span="3" HorizontalItemSpacing="8" VerticalItemSpacing="8"/>
+                                </CollectionView.ItemsLayout>
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Border StrokeThickness="0" StrokeShape="10">
+                                            <Image Source="{Binding .}"
+                                                HeightRequest="80"
+                                                Aspect="AspectFill"
+                                                BackgroundColor="DarkGrey"/>
+                                        </Border>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+                        </VerticalStackLayout>
+                    </ScrollView>
+                </Border>
+                <Button
+                    Margin="0,20,0,0"
+                    BackgroundColor="#37C672"
+                    Text="Contactar via WhatsApp"
+                    FontAttributes="Bold"
+                    x:Name="btnWhats"
+                    Clicked="btnWhats_Clicked"/>
+            </VerticalStackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
